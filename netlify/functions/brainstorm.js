@@ -31,6 +31,10 @@ const bsPrompt = `
 function add(a, b) {
 	return a + b;
 }
+// a javascript function to subtract two numbers	
+function subtract(a, b) {
+	return a - b;
+}
 export async function handler(event) {
 	const { Octokit } = await import("@octokit/core");
 	if (event.httpMethod !== "POST") {
